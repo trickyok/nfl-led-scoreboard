@@ -48,13 +48,14 @@ class MainRenderer:
             rotate_rate = self.__rotate_rate_for_game(self.data.current_game())
 
             # If we're ready to rotate, let's do it
-            # fix this u idiot
+            # TODO - Fix this
             if time_delta >= rotate_rate:
                 self.starttime = t.time()
                 self.data.needs_refresh = True
+                #print("INFO (XX:XX:XX): Attempting to rotate games")
 
                 if self.__should_rotate_to_next_game(self.data.current_game()):
-                    game = self.data.advance_to_next_game()
+                    self.data.advance_to_next_game()
 
                 if endtime - self.data.games_refresh_time >= GAMES_REFRESH_RATE:
                     self.data.refresh_games()
@@ -72,13 +73,17 @@ class MainRenderer:
 
     def __should_rotate_to_next_game(self, game):
         if self.data.config.rotation_enabled == False:
+            print("__should_rotate_to_next_game returned False (1)")
             return False
 
-        stay_on_preferred_team = self.data.config.preferred_teams and not self.data.config.rotation_preferred_team_live_enabled
-        if stay_on_preferred_team == False:
-            return True
-        else:
-            return False
+        # TODO - make it work (its supposed to stay on preferred team when live)
+        #stay_on_preferred_team = self.data.config.preferred_teams and not self.data.config.rotation_preferred_team_live_enabled
+        #if stay_on_preferred_team == False:
+        #    print("__should_rotate_to_next_game returned True")
+        #    return True
+        #else:
+        #    print("__should_rotate_to_next_game returned False (2)")
+        #    return False
 
         # figure this out later heh
         # showing_preferred_team = self.data.config.preferred_teams[0] in [game.awayteam, game.hometeam]
@@ -87,7 +92,7 @@ class MainRenderer:
         #         return True
         #     return False
 
-        # return True
+        return True
 
     def __draw_game(self, game):
         time = self.data.get_current_date()
@@ -112,7 +117,7 @@ class MainRenderer:
             if gamedatetime.day == time.day:
                 date_text = 'TODAY'
             else:
-                date_text = gamedatetime.strftime('%A %-d %b').upper()
+                date_text = gamedatetime.strftime('%A').upper()
             gametime = gamedatetime.strftime("%-I:%M %p")
             # Center the game time on screen.                
             date_pos = center_text(self.font_mini.getsize(date_text)[0], 32)

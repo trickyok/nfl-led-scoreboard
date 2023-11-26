@@ -58,30 +58,30 @@ def get_all_games():
     except Exception as e:
         print("something bad?", e)
 
-# def which_game(games, fav_team):
-#     # check for fav team first
-#     for game in games:
-#         if games[game]['hometeam'] == fav_team or games[game]['awayteam'] == fav_team:
-#             return games[game]
-#     # games should be sorted by date, earliest to latest
-#     for game in games:
-#         # testing purposes
-#         # if games[game]['state'] == 'post':
-#         #     return games[game]
-#         if games[game]['state'] == 'in':
-#             return games[game]
-#         if games[game]['state'] == 'pre':
-#             return games[game]
-#         if games[game]['state'] == 'post':
-#             return games[game]
-#     return None
+def which_game(games, fav_team):
+     # check for fav team first
+     for game in games:
+         if games[game]['hometeam'] == fav_team or games[game]['awayteam'] == fav_team:
+             return games[game]
+     # games should be sorted by date, earliest to latest
+     for game in games:
+         # testing purposes
+         # if games[game]['state'] == 'post':
+         #     return games[game]
+         if games[game]['state'] == 'in':
+             return games[game]
+         if games[game]['state'] == 'pre':
+             return games[game]
+         if games[game]['state'] == 'post':
+             return games[game]
+     return None
 
-# def is_playoffs():
-#     try:
-#         res = requests.get(URL)
-#         res = res.json()
-#         return res['season']['type'] == 3
-#     except requests.exceptions.RequestException:
-#         print("Error encountered getting game info, can't hit ESPN api")
-#     except Exception as e:
-#         print("something bad?", e)
+def is_playoffs():
+     try:
+         res = requests.get(URL)
+         res = res.json()
+         return res['season']['type'] == 3
+     except requests.exceptions.RequestException:
+         print("Error encountered getting game info, can't hit ESPN api")
+     except Exception as e:
+         print("something bad?", e)
