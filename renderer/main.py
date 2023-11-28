@@ -22,8 +22,8 @@ class MainRenderer:
         self.image = Image.new('RGB', (self.width, self.height))
         self.draw = ImageDraw.Draw(self.image)
         # Load the fonts
-        self.font = ImageFont.truetype("fonts/score_large.otf", 16)
-        self.font_mini = ImageFont.truetype("fonts/04B_24__.TTF", 8)
+        self.font = ImageFont.truetype("fonts/Pixel LCD-7.ttf", 10)
+        self.font_mini = ImageFont.truetype("fonts/04B_03__.TTF", 8)
 
     def render(self):
         while True:
@@ -261,8 +261,8 @@ class MainRenderer:
         self.draw.multiline_text((info_pos, 13), pos, fill=pos_colour, font=self.font_mini, align="center")
         self.draw.multiline_text((quarter_position, 0), quarter, fill=(255, 255, 255), font=self.font_mini, align="center")
         self.draw.multiline_text((time_period_pos, 6), time_period, fill=(255, 255, 255), font=self.font_mini, align="center")
-        self.draw.multiline_text((6, 19), awayscore, fill=(255, 255, 255), font=self.font, align="center")
-        self.draw.multiline_text((59 - home_score_size, 19), homescore, fill=(255, 255, 255), font=self.font, align="center")
+        self.draw.multiline_text((3, 22), awayscore, fill=(255, 255, 255), font=self.font, align="center")
+        self.draw.multiline_text((62 - home_score_size, 22), homescore, fill=(255, 255, 255), font=self.font, align="center")
         # Put the data on the canvas
         self.canvas.SetImage(self.image, 0, 0)
         if self.data.helmet_logos:
@@ -316,7 +316,7 @@ class MainRenderer:
         # Set the position of the information on screen.
         score_position = center_text(self.font.getsize(score)[0], 32)
         # Draw the text on the Data image.
-        self.draw.multiline_text((score_position, 19), score, fill=(255, 255, 255), font=self.font, align="center")
+        self.draw.multiline_text((score_position, 22), score, fill=(255, 255, 255), font=self.font, align="center")
         self.draw.multiline_text((26, 0), "END", fill=(255, 255, 255), font=self.font_mini,align="center")
         # Put the data on the canvas
         self.canvas.SetImage(self.image, 0, 0)

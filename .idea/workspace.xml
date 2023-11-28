@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46dc68f6-ae42-47de-803e-c29204c80442" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nfl_api_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/nfl_api_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/scoreboard_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/scoreboard_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/postgame.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/pregame.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/rz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/scoreboard.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/CAR.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/CAR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/MIA.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/MIA.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/NE.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/NE.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/PHI.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/PHI.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/SEA.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/SEA.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/TB.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/TB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/TEN.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/TEN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logos/WSH.png" beforeDir="false" afterPath="$PROJECT_DIR$/logos/WSH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="46dc68f6-ae42-47de-803e-c29204c80442" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +12,7 @@
     <session id="509085350">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -70,48 +52,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/scoreboard_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/renderer/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="318" column="52" selection-start-line="318" selection-start-column="52" selection-end-line="318" selection-end-column="52" />
-              <folding>
-                <element signature="e#2248#2526#0" />
-                <element signature="e#2758#3678#0" />
-                <element signature="e#3347#4014#0" />
-                <element signature="e#4063#7275#0" />
-                <element signature="e#7322#10563#0" />
-                <element signature="e#10610#16801#0" />
-                <element signature="e#20113#21135#0" />
-                <element signature="e#21169#21744#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -158,7 +99,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rpi-rgb-led-matrix" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -404,6 +345,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/scoreboard_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/renderer/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
@@ -417,23 +375,6 @@
             <element signature="e#10610#16801#0" />
             <element signature="e#20113#21135#0" />
             <element signature="e#21169#21744#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/scoreboard_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
